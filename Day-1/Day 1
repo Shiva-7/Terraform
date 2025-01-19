@@ -1,4 +1,11 @@
 This is day 1 of learning with handson on terraform and we are going to only use the codespace for this learning series
-{
-Hello
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+    ami = var.ami_value
+    instance_type = var.instance_type_value
+  
 }

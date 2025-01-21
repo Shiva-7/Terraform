@@ -3,7 +3,5 @@ terraform {
     bucket         = "my-aws-s3-backexg"
     key            = "shiva/terraform.tfstate"
     region         = "us-east-1"
-    encrypt        = true
-    dynamodb_table = "terraform-lock"
   }
 }
